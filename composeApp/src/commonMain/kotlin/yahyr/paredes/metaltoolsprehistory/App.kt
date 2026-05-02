@@ -65,7 +65,9 @@ fun App() {
                 }
 
                 Screen.FINAL -> AnimatedScreen {
-                    FinalScreen()
+                    FinalScreen(finish = {
+                        currentScreen = Screen.START
+                    })
                 }
             }
         }

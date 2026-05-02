@@ -9,6 +9,6 @@ actual fun screenScaleFactor(): Float {
     return when {
         screenWidthDp >= 720 -> 1.5f // tablet grande
         screenWidthDp >= 480 -> 1.2f // tablet pequeña / phablet
-        else -> 1f // celular
+        else -> 0.85f // celular
     }
 }

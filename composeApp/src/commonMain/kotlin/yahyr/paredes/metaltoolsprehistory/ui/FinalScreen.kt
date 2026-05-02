@@ -40,7 +40,7 @@ import org.jetbrains.compose.resources.painterResource
 import yahyr.paredes.metaltoolsprehistory.audio.AudioPlayer
 
 @Composable
-fun FinalScreen() {
+fun FinalScreen(finish: () -> Unit) {
     val audioPlayer = remember { AudioPlayer() }
 
     LaunchedEffect(Unit) {
@@ -119,7 +119,7 @@ fun FinalScreen() {
                     painter = painterResource(Res.drawable.character),
                     contentDescription = null,
                     modifier = Modifier.clickable {
-//                    (context as? Activity)?.recreate()
+                        finish()
                     }
                 )
             }
