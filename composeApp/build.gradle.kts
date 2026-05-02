@@ -60,11 +60,11 @@ kotlin {
 }
 
 android {
-    namespace = "yahyr.paredes.metaltoolsprehistory"
+    namespace = "dev.yahyrparedes.metaltools"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "yahyr.paredes.metaltoolsprehistory"
+        applicationId = "dev.yahyrparedes.metaltools"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
